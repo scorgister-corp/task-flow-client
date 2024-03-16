@@ -48,8 +48,13 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
+    <string name="welcome">"Welcome, {pseudo}"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="today">Today</string>
+    <string name="flag">Flag</string>
+    <string name="prog">Programmed</string>
+    <string name="all">All</string>
+    <string name="group">Group</string>
+    <string name="frends">Frends</string>
 </resources>
