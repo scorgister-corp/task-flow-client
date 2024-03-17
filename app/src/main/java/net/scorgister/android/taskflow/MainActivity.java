@@ -2,8 +2,6 @@ package net.scorgister.android.taskflow;
 
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
@@ -17,6 +15,7 @@ import net.scorgister.android.taskflow.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +29,16 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         //setContentView(binding.getRoot());
         setContentView(R.layout.activity_main);
-/*
+
+        ImageButton view = findViewById(R.id.profileIcon);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_login);
+
+            }
+        });
+        /*
         setSupportActionBar(binding.toolbar);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
