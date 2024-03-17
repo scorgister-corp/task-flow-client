@@ -27,10 +27,11 @@
 
                 <ImageButton
                     android:id="@+id/profileIcon"
-                    android:layout_marginLeft="20dp"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="0"
+                    android:src="@android:drawable/ic_input_add"
                     tools2:srcCompat="@tools:sample/avatars" />
 
                 <Space
