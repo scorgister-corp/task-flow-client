@@ -17,6 +17,7 @@ import net.scorgister.android.taskflow.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        TextView text = findViewById(R.id.welcome);
+        text.setTextSize(20);
+        text.setText("Welcome, " + "Scorgister");
 
         ImageButton view = findViewById(R.id.profileIcon);
         view.setOnClickListener(new View.OnClickListener() {
