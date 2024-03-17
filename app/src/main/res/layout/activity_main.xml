@@ -238,7 +238,7 @@
                                 android:background="@drawable/rounded_button_default"
                                 android:gravity="center"
                                 android:textColor="@color/text_blue"
-                                android:text="@string/frends"
+                                android:text="@string/friend"
                                 android:textAlignment="center" />
 
                             <Space

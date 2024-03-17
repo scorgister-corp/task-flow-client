@@ -44,8 +44,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome, {pseudo}"</string>
@@ -56,5 +58,7 @@
     <string name="prog">Programmed</string>
     <string name="all">All</string>
     <string name="group">Group</string>
-    <string name="frends">Frends</string>
+    <string name="friend">Friend</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
 </resources>
