@@ -31,7 +31,6 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_weight="0"
-
                     tools2:srcCompat="@tools:sample/avatars" />
 
                 <Space
@@ -106,6 +105,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
+                        android:elevation="20dp"
+                        android:background="@drawable/shadow_bg"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

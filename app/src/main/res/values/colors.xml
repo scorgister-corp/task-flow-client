@@ -10,5 +10,7 @@
     <color name="bg_violet">#2C2B36</color>
     <color name="light_blue">#AED5EF</color>
     <color name="text_blue">#BBDBF0</color>
+    <color name="shadow">#CC1F1E23</color>
+
 
 </resources>
