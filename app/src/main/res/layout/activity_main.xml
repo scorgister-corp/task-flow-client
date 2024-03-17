@@ -130,9 +130,10 @@
                                 android:id="@+id/today_btn"
                                 android:layout_width="150dp"
                                 android:layout_height="120dp"
-                                android:background="@drawable/rounded_button"
+                                android:background="@drawable/rounded_button_today"
                                 android:gravity="center"
                                 android:text="@string/today"
+                                android:textColor="@color/light_blue"
                                 android:textAlignment="center" />
 
                             <Space
@@ -144,9 +145,10 @@
                                 android:id="@+id/flag_btn"
                                 android:layout_width="150dp"
                                 android:layout_height="120dp"
-                                android:background="@drawable/rounded_button"
+                                android:background="@drawable/rounded_button_flag"
                                 android:gravity="center"
                                 android:text="@string/flag"
+                                android:textColor="#80F62E2E"
                                 android:textAlignment="center" />
 
                             <Space
@@ -172,10 +174,11 @@
                                 android:id="@+id/prog_btn"
                                 android:layout_width="150dp"
                                 android:layout_height="120dp"
-                                android:background="@drawable/rounded_button"
+                                android:background="@drawable/rounded_button_prog"
                                 android:gravity="center"
                                 android:text="@string/prog"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FF7E248D" />
 
                             <Space
                                 android:layout_width="wrap_content"
@@ -186,10 +189,11 @@
                                 android:id="@+id/all_btn"
                                 android:layout_width="150dp"
                                 android:layout_height="120dp"
-                                android:background="@drawable/rounded_button"
+                                android:background="@drawable/rounded_button_all"
                                 android:gravity="center"
                                 android:text="@string/all"
-                                android:textAlignment="center" />
+                                android:textAlignment="center"
+                                android:textColor="#FF1942B8" />
 
                             <Space
                                 android:layout_width="wrap_content"
@@ -214,8 +218,9 @@
                                 android:id="@+id/group_btn"
                                 android:layout_width="150dp"
                                 android:layout_height="120dp"
-                                android:background="@drawable/rounded_button"
+                                android:background="@drawable/rounded_button_default"
                                 android:gravity="center"
+                                android:textColor="@color/text_blue"
                                 android:text="@string/group"
                                 android:textAlignment="center" />
 
@@ -228,8 +233,9 @@
                                 android:id="@+id/frends_btn"
                                 android:layout_width="150dp"
                                 android:layout_height="120dp"
-                                android:background="@drawable/rounded_button"
+                                android:background="@drawable/rounded_button_default"
                                 android:gravity="center"
+                                android:textColor="@color/text_blue"
                                 android:text="@string/frends"
                                 android:textAlignment="center" />
 
@@ -250,7 +256,7 @@
                     android:textAlignment="center">
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/myboards"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -260,7 +266,8 @@
                         android:paddingLeft="20dp"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:text="TextView"
+                        android:textColor="@color/text_blue"
+                        android:text="My Boards"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
