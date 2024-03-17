@@ -30,7 +30,7 @@ public class RegisterFragment extends Fragment {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.log_frag, new LoginFragment()).commitNow();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.log_frag, new LoginFragment()).commit();
             }
         });
         return view;

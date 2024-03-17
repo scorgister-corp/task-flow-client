@@ -39,9 +39,33 @@ public class LoginFragment extends Fragment {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.log_frag, new RegisterFragment()).commitNow();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.log_frag, new RegisterFragment()).commit();
             }
         });
+
+        Button loginBtn = view.findViewById(R.id.login);
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText emailText =  view.findViewById(R.id.email);
+                EditText passwordText =  view.findViewById(R.id.password);
+
+                String email = emailText.getText().toString();
+                String password = passwordText.getText().toString();
+
+                if(email.equals("") || password.equals("")) {
+                    return;
+                }
+
+                Connector connector = new Connector(email, password);
+                connector.connect(() -> {
+                    LoginActivity ac = (LoginActivity) getActivity();
+                    ac.startHome(v);
+                });
+
+            }
+        });
+
         return view;
     }
 }
