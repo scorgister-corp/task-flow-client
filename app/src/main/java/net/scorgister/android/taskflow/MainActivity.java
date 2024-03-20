@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
        Utils.get("/version", new RunnableUtil<JSONObject>() {
             @Override
             public void exec(JSONObject... data) {
+                if(data[0] == null)
+                    return;
                 Log.println(Log.INFO, "TASKFLOW", data[0].toString());
             }
         });
