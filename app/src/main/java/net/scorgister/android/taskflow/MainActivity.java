@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_home);
+/*
         Utils.createAPIConnection("http://192.168.1.95:8100");
        Utils.get("/version", new RunnableUtil<JSONObject>() {
             @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startLogin(v);
             }
         });
-
+*/
     }
 
     public void startLogin(View view) {
