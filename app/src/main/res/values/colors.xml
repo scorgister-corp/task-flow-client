@@ -3,14 +3,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FFFF9800</color>
-    <color name="red">#FFF62E2E</color>
-    <color name="grey">#9C9389</color>
+    <color name="red">#d4353a</color>
+    <color name="grey">#1a1a1a</color>
     <color name="b_grey">#2C343A</color>
     <color name="dark_violet">#191821</color>
     <color name="bg_violet">#2C2B36</color>
     <color name="light_blue">#AED5EF</color>
     <color name="text_blue">#2A678F</color>
     <color name="shadow">#CC1F1E23</color>
-
+    <color name="background">#000000</color>
+    <color name="text_grey">#717171</color>
 
 </resources>

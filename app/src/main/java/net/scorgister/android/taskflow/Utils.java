@@ -1,10 +1,13 @@
 package net.scorgister.android.taskflow;
 
 import android.os.AsyncTask;
+import android.util.JsonWriter;
 
 import net.scorgister.android.taskflow.net.APIConnection;
 
 import org.json.JSONObject;
+
+import java.io.FileOutputStream;
 
 public class Utils {
 
@@ -33,11 +36,23 @@ public class Utils {
             protected void onPostExecute(JSONObject jsonObject) {
                 postExecution.exec(jsonObject);
             }
-        }.execute(endpoint);
+        }.execute();
         return null;
     }
 
-    public static JSONObject post(String endpoint, JSONObject data) {
-        return connection.post(endpoint, data);
+    public static JSONObject post(String endpoint, JSONObject data, RunnableUtil<JSONObject> postExecution) {
+        new AsyncTask<String, Void, JSONObject>() {
+
+            @Override
+            protected JSONObject doInBackground(String... strings) {
+                return connection.post(endpoint, data);
+            }
+
+            @Override
+            protected void onPostExecute(JSONObject jsonObject) {
+                postExecution.exec(jsonObject);
+            }
+        }.execute();
+        return null;
     }
 }

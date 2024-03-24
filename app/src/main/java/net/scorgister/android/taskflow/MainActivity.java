@@ -22,37 +22,18 @@ import android.widget.TextView;
 
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity {
+import java.io.IOException;
+
+public class MainActivity extends TaskFlowActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_home);
-/*
-        Utils.createAPIConnection("http://192.168.1.95:8100");
-       Utils.get("/version", new RunnableUtil<JSONObject>() {
-            @Override
-            public void exec(JSONObject... data) {
-                if(data[0] == null)
-                    return;
-                Log.println(Log.INFO, "TASKFLOW", data[0].toString());
-            }
-        });
-
-        TextView text = findViewById(R.id.welcome);
-        text.setTextSize(20);
-        text.setText("Welcome, " + "Scorgister");
-
-        ImageButton view = findViewById(R.id.profileIcon);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startLogin(v);
-            }
-        });
-*/
+        setContentView(R.layout.activity_main);
+        //Utils.createAPIConnection("http://192.168.1.95:8100");
+        saveConfig("", "");
     }
 
     public void startLogin(View view) {
